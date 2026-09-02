@@ -127,6 +127,52 @@
             line-height: 1.55;
         }
 
+        .flow {
+            margin-bottom: 3.5rem;
+            padding: 2rem;
+            border: 1px solid var(--line);
+            border-radius: 0.5rem;
+            background: var(--surface);
+        }
+
+        .flow h2 {
+            margin-bottom: 0.75rem;
+            font-size: 1.5rem;
+        }
+
+        .flow-intro {
+            max-width: 44rem;
+            margin-bottom: 1.75rem;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        .flow-steps {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .flow-steps li {
+            padding-top: 0.75rem;
+            border-top: 2px solid var(--accent);
+        }
+
+        .flow-steps strong {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-size: 0.95rem;
+        }
+
+        .flow-steps span {
+            color: var(--muted);
+            font-size: 0.85rem;
+            line-height: 1.45;
+        }
+
         footer {
             padding: 1.25rem 6vw;
             border-top: 1px solid var(--line);
@@ -155,6 +201,16 @@
 
             .benefit {
                 padding-top: 1rem;
+            }
+
+            .flow {
+                margin-bottom: 2.5rem;
+                padding: 1.5rem;
+            }
+
+            .flow-steps {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
             }
         }
     </style>
@@ -193,6 +249,33 @@
                 <h2>Automação</h2>
                 <p>Use ferramentas de integração contínua para testar e entregar software com mais agilidade.</p>
             </article>
+        </section>
+
+        <section class="flow">
+            <h2>Como funciona o GitHub Flow?</h2>
+            <p class="flow-intro">O GitHub Flow é um fluxo simples para desenvolver funcionalidades com organização e manter o código principal estável. Cada mudança passa por uma etapa de discussão e revisão antes de ser integrada.</p>
+            <ol class="flow-steps">
+                <li>
+                    <strong>1. Crie uma branch</strong>
+                    <span>Separe o trabalho novo da versão principal.</span>
+                </li>
+                <li>
+                    <strong>2. Faça commits</strong>
+                    <span>Registre alterações pequenas e bem descritas.</span>
+                </li>
+                <li>
+                    <strong>3. Abra um pull request</strong>
+                    <span>Apresente a mudança para o time.</span>
+                </li>
+                <li>
+                    <strong>4. Revise e ajuste</strong>
+                    <span>Receba comentários, testes e melhorias.</span>
+                </li>
+                <li>
+                    <strong>5. Faça o merge</strong>
+                    <span>Integre a alteração quando ela estiver pronta.</span>
+                </li>
+            </ol>
         </section>
     </main>
 
